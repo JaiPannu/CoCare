@@ -43,25 +43,47 @@ CoCare is an AI-powered assistant platform designed to support caregivers of ind
 - Node.js ≥ 16
 - Python 3.10+
 - MongoDB or Firebase (future support)
-- Optional: TensorFlow / PyTorch for local model testing
+- TensorFlow
 
-### Getting Started
+### How It Works
+**Real-Time Video Capture**:- Captures live video using a webcam.
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/CoCare.git
-cd CoCare
+**Pose Detection**:- Uses MediaPipe’s PoseLandmarker to track 33 keypoints of the body.
 
-# Install backend dependencies
-cd server
-pip install -r requirements.txt
+**Log Generation**:- Stores key pose data from relevant points (e.g., shoulders, hips, wrists) every 10 frames.
 
-# Start backend
-python app.py
+## Gemini Integration:
 
-# Install frontend dependencies
-cd ../client
-npm install
+1. Buffers 10 entries and sends them to Gemini (via Google Generative AI) every 30 seconds.
 
-# Start frontend
-npm run dev
+2. Gemini summarizes detected movements like sitting, playing, jumping, or signs of stress.
+
+# Symptom Detection & Suggestions: Can infer overstimulation and trigger suggestions such as:
+
+    - Quiet time
+
+    - Deep breathing
+
+    - Stretching or grounding exercises
+
+### Tech Stack
+| Technology      | Purpose                                      |
+| --------------- | -------------------------------------------- |
+| `MediaPipe`     | Pose detection (33 keypoints)                |
+| `OpenCV`        | Webcam capture and frame drawing             |
+| `Google Gemini` | Movement interpretation via natural language |
+| `Python`        | Backend logic and processing                 |
+| `JSON`          | Logging and data export                      |
+| `Threading`     | Async Gemini querying to avoid lag           |
+
+### Who It’s For
+Caregivers of neurodivergent or physically disabled individuals
+
+Special education teachers
+
+Therapists and child development specialists
+
+Parents managing care routines
+
+### License
+MIT License © 2025 CoCare AI Team
