@@ -46,29 +46,39 @@ CoCare is an AI-powered assistant platform designed to support caregivers of ind
 - TensorFlow
 
 ### How It Works
-**Real-Time Video Capture**:- Captures live video using a webcam.
 
-**Pose Detection**:- Uses MediaPipe’s PoseLandmarker to track 33 keypoints of the body.
+**Real-Time Video Capture**  
+Captures live video using a webcam.
 
-**Log Generation**:- Stores key pose data from relevant points (e.g., shoulders, hips, wrists) every 10 frames.
+**Pose Detection**  
+Uses MediaPipe’s PoseLandmarker to track 33 keypoints of the body.
 
-## Gemini Integration:
+**Log Generation**  
+Stores key pose data from relevant points (e.g., shoulders, hips, wrists) every 10 frames.
 
-1. Buffers 10 entries and sends them to Gemini (via Google Generative AI) every 30 seconds.
+---
 
+## Gemini Integration
+
+1. Buffers 10 entries and sends them to Gemini (via Google Generative AI) every 30 seconds.  
 2. Gemini summarizes detected movements like sitting, playing, jumping, or signs of stress.
 
-# Symptom Detection & Suggestions: Can infer overstimulation and trigger suggestions such as:
+---
 
-    - Quiet time
+## Symptom Detection & Suggestions
 
-    - Deep breathing
+Can infer overstimulation and trigger suggestions such as:
 
-    - Stretching or grounding exercises
+- Quiet time  
+- Deep breathing  
+- Stretching or grounding exercises  
+
+---
 
 ### Tech Stack
+
 | Technology      | Purpose                                      |
-| --------------- | -------------------------------------------- |
+|----------------|----------------------------------------------|
 | `MediaPipe`     | Pose detection (33 keypoints)                |
 | `OpenCV`        | Webcam capture and frame drawing             |
 | `Google Gemini` | Movement interpretation via natural language |
@@ -76,14 +86,17 @@ CoCare is an AI-powered assistant platform designed to support caregivers of ind
 | `JSON`          | Logging and data export                      |
 | `Threading`     | Async Gemini querying to avoid lag           |
 
+---
+
 ### Who It’s For
-Caregivers of neurodivergent or physically disabled individuals
 
-Special education teachers
+- Caregivers of neurodivergent or physically disabled individuals  
+- Special education teachers  
+- Therapists and child development specialists  
+- Parents managing care routines  
 
-Therapists and child development specialists
-
-Parents managing care routines
+---
 
 ### License
+
 MIT License © 2025 CoCare AI Team
