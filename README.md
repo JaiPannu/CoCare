@@ -34,10 +34,6 @@ CoCare is an AI-powered assistant platform designed to support caregivers of ind
 
 ---
 
-## Installation
-
-> ⚠️ This is an early-stage project (v0). Features and setup processes are under development.
-
 ### Prerequisites
 
 - Node.js ≥ 16
@@ -78,13 +74,14 @@ Can infer overstimulation and trigger suggestions such as:
 ### Tech Stack
 
 | Technology      | Purpose                                      |
-|----------------|----------------------------------------------|
+|----------------|-----------------------------------------------|
 | `MediaPipe`     | Pose detection (33 keypoints)                |
 | `OpenCV`        | Webcam capture and frame drawing             |
 | `Google Gemini` | Movement interpretation via natural language |
 | `Python`        | Backend logic and processing                 |
 | `JSON`          | Logging and data export                      |
 | `Threading`     | Async Gemini querying to avoid lag           |
+| `Typescript`    | Predictable frontend code.                   |
 
 ---
 
