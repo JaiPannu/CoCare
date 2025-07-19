@@ -11,25 +11,25 @@ CoCare is an AI-powered assistant platform designed to support caregivers of ind
 
 ## Key Features
 
-- 🔍 **Passive Observation & Logging**  
+- **Passive Observation & Logging**  
   Automatically observes and logs daily activities using secure sensors and machine learning algorithms.
 
-- 🧠 **Personalized Insights**  
+- **Personalized Insights**  
   Uses previous logs and caregiver input to create tailored support plans—because one size doesn't fit all.
 
-- 🕊 **Anomaly Detection & Soothing Suggestions**  
+- **Anomaly Detection & Soothing Suggestions**  
   Detects signs of overstimulation or distress and recommends calming strategies like quiet time or breathing exercises.
 
-- ⏰ **Smart Alerts Between Transitions**  
+- **Smart Alerts Between Transitions**  
   Get real-time nudges and suggestions during key transitions like rest, meals, or playtime.
 
-- 🗣️ **Quick Interaction Tools**  
+- **Quick Interaction Tools**  
   Accept, edit, or reject AI-generated reports with a single tap or voice note.
 
-- 📊 **Progress Tracking & Visualizations**  
+- **Progress Tracking & Visualizations**  
   Track behavioral and emotional development over time to inform decisions and interventions.
 
-- 🔒 **Privacy-First Architecture**  
+- **Privacy-First Architecture**  
   All collected data is encrypted and stored securely, with full transparency and caregiver control.
 
 ---
